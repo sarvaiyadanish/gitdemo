@@ -1,0 +1,112 @@
+practical 1//////
+
+name = input("Enter your name:- ")
+age = int(input("Enter your name:- "))
+userage=2024+(100- age)
+print("Hi my hundered year",userage)
+
+
+practical 2/////////
+
+# This function adds two numbers
+def add(x, y):
+    return x + y
+
+# This function subtracts two numbers
+def subtract(x, y):
+    return x - y
+
+# This function multiplies two numbers
+def multiply(x, y):
+    return x * y
+
+# This function divides two numbers
+def divide(x, y):
+    return x / y
+
+
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:
+    # take input from the user
+    choice = input("Enter choice(1/2/3/4): ")
+
+    # check if choice is one of the four options
+    if choice in ('1', '2', '3', '4'):
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+            continue
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+       
+        next_calculation = input("Let's do next calculation? (yes/no): ")
+        if next_calculation == "no":
+          break
+    else:
+        print("Invalid Input")
+
+
+practical 3///////
+
+
+num = int(input("give me a number to check: "))
+check = int(input("give me a number to divide by: "))
+
+if num % 4 == 0:
+    print(num, "is a multiple of 4")
+elif num % 2 == 0:
+    print(num, "is an even number")
+else:
+    print(num, "is an odd number")
+
+if num % check == 0:
+    print(num, "divides evenly by", check)
+else:
+    print(num, "does not divide evenly by", check)
+
+practical 4///////
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b =[]
+# Create a new list with elements less than 5
+
+for i in a:
+    if i < 5:
+        b.append(i)
+print(b)
+
+practical 5///////
+
+a=[]
+num=int(input("Enter the number"))
+for x in range(1,num-1):
+    if num%x==0:
+        a.append(x)
+print(a)  a=[]
+num=int(input("Enter the number"))
+for x in range(1,num-1):
+    if num%x==0:
+        a.append(x)
+print(a)  a=[]
+num=int(input("Enter the number"))
+for x in range(1,num-1):
+    if num%x==0:
+        a.append(x)
+print(a)  
