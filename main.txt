@@ -113,11 +113,8 @@ print(a)
 
 practical 6//////
 
-a=[1,1,2,3,5,8,14,23,41,53,23]
-b=[1,1,2,3,5,8,14,23,41,53,23]
-c=[]
-for i in range(len(a));
-  if a[i] in b:
-      c.append(a[i])
-c=set(c)
-print(c)
+string=input(("Enter a letter:"))  
+if(string==string[::-1]):  
+      print("The letter is a palindrome")  
+else:  
+      print("The letter is not a palindrome")  
